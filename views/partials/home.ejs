@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pawan Devkota's Journey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="public/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav class="navbar sticky-top navbar-custom navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logoo.jpg" id="logo" alt="Logo" width="15" height="15">
+
+                <span class="ms-2">PAWAN DEVKOTA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homeejs">Main</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutejs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="projectejs">My Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="serviceejs">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="contactejs">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn " style="color:white; background-color: #35631a; " type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container my-5">
+        <div class="frame">
+            <div class="pad" id="text">
+                <p class="pad" id="welcome">Welcome to My Journey</p>
+                <h1 class="pad" id="MSG">Hi there, I am <span id="color">Pawan Devkota</span>, a Software Engineer studying at Centennial College in Canada.</h1>
+                <p class="pad" id="mission">I used to be an Esports player back in Nepal, where I competed in numerous tier 1 tournaments. After retiring, I came to Canada to pursue a career in Software Engineering. I'm passionate about leveraging technology to drive positive                 change and innovation.</p>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='aboutejs'">Get to Know Me</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>
+<!-- CSS here -->
+<style>
+        
+    body {
+        background-color: #f8f9fa;
+        color: #343a40;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .navbar-custom {
+        background-color: #51571d;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .navbar-custom .navbar-brand {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .navbar-custom .navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    .navbar-custom .navbar-toggler:focus,
+    .navbar-custom .navbar-toggler:active {
+        outline: none;
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover {
+        color: #ff6f61;
+    } 
+
+    /* Frame Styles */
+    .frame {
+        background-color: #51571d;
+        color: #f1faee;
+        border-radius: 30px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .frame:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #ff6f61, #e63946);
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%);
+        z-index: -1;
+    }
+
+    #color {
+        color: #ff6f61;
+    }
+
+    .pad {
+        padding: 20px;
+    }
+
+    #welcome {
+        margin-bottom: -5px;
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 18px;
+        background-color: #35631a;
+        border-color: #ffffff;
+        border-radius: 50px;
+    }
+
+    .btn:hover {
+        background-color: #ff6f61;
+    }
+</style>
